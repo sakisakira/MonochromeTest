@@ -21,6 +21,7 @@
 		2F1D65D117FB98960031FC08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1D65B317FB98960031FC08 /* UIKit.framework */; };
 		2F1D65D917FB98960031FC08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F1D65D717FB98960031FC08 /* InfoPlist.strings */; };
 		2F1D65DB17FB98960031FC08 /* MonochromeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D65DA17FB98960031FC08 /* MonochromeTestTests.m */; };
+		2F1D65E517FB9A350031FC08 /* data.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F1D65E417FB9A350031FC08 /* data.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2F1D65D617FB98960031FC08 /* MonochromeTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonochromeTestTests-Info.plist"; sourceTree = "<group>"; };
 		2F1D65D817FB98960031FC08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F1D65DA17FB98960031FC08 /* MonochromeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonochromeTestTests.m; sourceTree = "<group>"; };
+		2F1D65E417FB9A350031FC08 /* data.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = data.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		2F1D65B517FB98960031FC08 /* MonochromeTest */ = {
 			isa = PBXGroup;
 			children = (
+				2F1D65E417FB9A350031FC08 /* data.jpg */,
 				2F1D65BE17FB98960031FC08 /* MTAppDelegate.h */,
 				2F1D65BF17FB98960031FC08 /* MTAppDelegate.m */,
 				2F1D65C117FB98960031FC08 /* Main.storyboard */,
@@ -200,6 +203,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = sakira;
 				TargetAttributes = {
+					2F1D65AB17FB98960031FC08 = {
+						DevelopmentTeam = 3H2MK9FR2S;
+					};
 					2F1D65CC17FB98960031FC08 = {
 						TestTargetID = 2F1D65AB17FB98960031FC08;
 					};
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F1D65C817FB98960031FC08 /* Images.xcassets in Resources */,
+				2F1D65E517FB9A350031FC08 /* data.jpg in Resources */,
 				2F1D65BA17FB98960031FC08 /* InfoPlist.strings in Resources */,
 				2F1D65C317FB98960031FC08 /* Main.storyboard in Resources */,
 			);
@@ -377,12 +384,20 @@
 		2F1D65DF17FB98960031FC08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_FAST_MATH = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MonochromeTest/MonochromeTest-Prefix.pch";
 				INFOPLIST_FILE = "MonochromeTest/MonochromeTest-Info.plist";
+				LLVM_LTO = NO;
+				LLVM_VECTORIZE_LOOPS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,12 +405,20 @@
 		2F1D65E017FB98960031FC08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_FAST_MATH = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MonochromeTest/MonochromeTest-Prefix.pch";
 				INFOPLIST_FILE = "MonochromeTest/MonochromeTest-Info.plist";
+				LLVM_LTO = NO;
+				LLVM_VECTORIZE_LOOPS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F6D4514C-6496-45E1-97BB-51B85D519173";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +484,7 @@
 				2F1D65E017FB98960031FC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F1D65E117FB98960031FC08 /* Build configuration list for PBXNativeTarget "MonochromeTestTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +493,7 @@
 				2F1D65E317FB98960031FC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+//  NSLog(@"size of uint64_t %ld", sizeof(uint64_t));
+  
     return YES;
 }
 							
